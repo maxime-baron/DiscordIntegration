@@ -228,4 +228,14 @@ public class ServerInterface implements McServerInterface {
     public static String getLoaderVersion() {
         throw new AssertionError();
     }
+
+    @Override
+    public boolean isPlayerVanish(UUID player) {
+        return checkVanish(player);
+    }
+
+    @ExpectPlatform
+    private static boolean checkVanish(UUID player) {
+        throw new AssertionError();
+    }
 }

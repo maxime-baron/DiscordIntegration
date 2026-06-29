@@ -42,4 +42,8 @@ public class ServerInterfaceImpl {
         }
         return false;
     }
+
+    public static boolean checkVanish(UUID player) {
+        return false;
+    }
 }
